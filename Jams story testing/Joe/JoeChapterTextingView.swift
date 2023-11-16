@@ -29,15 +29,14 @@ struct JoeChapterTextingView: View {
                     .font(.system(size: 32))
                     .padding()
                     
-                    Button("Finish") {
-                        
+                    
+                    NavigationLink {
+                        MainView()
+                    } label: {
+                        Text("Finish")
                     }
-                    .padding()
-                    .foregroundColor(.black)
-                    .overlay(
-                        RoundedRectangle(cornerRadius: 10)
-                            .stroke(Color.blue, lineWidth: 2)
-                    )
+                    
+
                 }
             }
         }

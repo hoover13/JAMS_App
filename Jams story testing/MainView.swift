@@ -12,7 +12,7 @@ struct MainView: View {
     @State private var navigateToNextChapter = false
     
     var body: some View { 
-        NavigationView {
+        NavigationStack {
             ZStack {
 //                Image("bg")
                 LinearGradient(
@@ -36,39 +36,40 @@ struct MainView: View {
                     }, label: {
 //                        Text("Chapter 2")
                         ChapterButtonView(number: 2)
-                            .opacity(chapterUnlocker.isChapter2Disabled ? 0.2 : 1.0)
+//                            .opacity(chapterUnlocker.isChapter2Disabled ? 0.2 : 1.0)
                     })
-                    .disabled(chapterUnlocker.isChapter2Disabled)
+//                    .disabled(chapterUnlocker.isChapter2Disabled)
                     
                     NavigationLink(destination: {
-                        Chapter3View()
+                        JoeChapterTextingView()
                     }, label: {
 //                        Text("Chapter 3")
                         ChapterButtonView(number: 3)
-                            .opacity(chapterUnlocker.isChapter3Disabled ? 0.2 : 1.0)
+//                            .opacity(chapterUnlocker.isChapter3Disabled ? 0.2 : 1.0)
                     })
-                    .disabled(chapterUnlocker.isChapter3Disabled)
+//                    .disabled(chapterUnlocker.isChapter3Disabled)
                     
                     NavigationLink(destination: {
                         Chapter4View()
                     }, label: {
 //                        Text("Chapter 4")
                         ChapterButtonView(number: 4)
-                            .opacity(chapterUnlocker.isChapter4Disabled ? 0.2 : 1.0)
+//                            .opacity(chapterUnlocker.isChapter4Disabled ? 0.2 : 1.0)
                     }) 
-                    .disabled(chapterUnlocker.isChapter4Disabled)
+//                    .disabled(chapterUnlocker.isChapter4Disabled)
                     
                     NavigationLink(destination: {
                         Chapter5View()
                     }, label: {
 //                        Text("Chapter 5")
                         ChapterButtonView(number: 5)
-                            .opacity(chapterUnlocker.isChapter5Disabled ? 0.2 : 1.0)
+//                            .opacity(chapterUnlocker.isChapter5Disabled ? 0.2 : 1.0)
                     })
-                    .disabled(chapterUnlocker.isChapter5Disabled)
+//                    .disabled(chapterUnlocker.isChapter5Disabled)
                 }
             }
         }
+        .navigationBarBackButtonHidden(true)
     }
 }
 

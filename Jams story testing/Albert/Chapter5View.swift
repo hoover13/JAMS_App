@@ -17,81 +17,86 @@ enum SheetTypes: Identifiable {
 
 
     
-    struct Chapter5View: View {
-        @State private var activeSheet: SheetTypes?
-        
-        
-        var body: some View {
-            ZStack {
-                LinearGradient(colors: [.blue, .green], startPoint: .topTrailing, endPoint: .bottomTrailing)
-                    .ignoresSafeArea()
-                VStack {
-                    Text("Chapter 5:")
-                        .bold()
-                    Text("Not So Happily Ever After?")
-                       
-                        .font(.title)
-                        
-                    
-                    Image("castle")
+struct Chapter5View: View {
+    @State private var activeSheet: SheetTypes?
+    @State var isAnimated: Bool = false
+    @State private var rotationAngle: Double = 0.0
+    
+    
+    
+    var body: some View {
+        ZStack {
+            LinearGradient(colors: [.blue, .green], startPoint: .topTrailing, endPoint: .bottomTrailing)
+                .ignoresSafeArea()
+            VStack {
+                HStack {
+                    Image("cloud")
                         .resizable()
                         .scaledToFit()
-                    HStack {
-                        Button(action: {
-                            self.activeSheet = .first
-                        }, label: {
-                            Text("Part 1")
-                                .frame(width: 80, height: 45)
-                                .padding([.trailing, .leading])
+                        .frame(width: 200, height: 100)
+                    
+                    Image("cloud")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 120, height: 100)
+                    Image("cloud")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 150, height: 100)
+                    
+                    
+                }
+                Text("Chapter 5:")
+                    .bold()
+                Text("Not So Happily Ever After?")
+                    .bold()
+                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                    
+                
+                Image("castle")
+                    .resizable()
+                    .scaledToFit()
+                    .padding()
+                    .rotation3DEffect(
+                        .degrees(rotationAngle),
+                        axis: /*@START_MENU_TOKEN@*/(x: 0.0, y: 1.0, z: 0.0)/*@END_MENU_TOKEN@*/
+                    )
+                    .onTapGesture {
+                        withAnimation(Animation.linear(duration: 4.0).repeatForever(autoreverses: false)) {
+                            self.rotationAngle = 360.0
                                 
-                                .background(.blue)
-                                .foregroundColor(.white)
-                                .bold()
-                                .font(.title)
-                                .cornerRadius(10)
-                               
-                               
-                                
-                               
                             
-                            Button(action: {
-                                self.activeSheet = .second
-                            }, label: {
-                                Text("Part 2")
-                                    .frame(width: 80, height: 45)
-                                    .padding([.trailing, .leading])
-                                    .background(.blue)
-                                    .foregroundColor(.white)
-                                    .bold()
-                                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                                    .cornerRadius(10)
-                                
-                                Button(action: {
-                                    self.activeSheet = .third
-                                }, label: {
-                                    Text("Part 3")
-                                        .frame(width: 80, height: 45)
-                                        .padding([.trailing, .leading])
-                                        .background(.blue)
-                                        .foregroundColor(.white)
-                                        .bold()
-                                        .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                                        .cornerRadius(10)
-                                    
-                                })
-                                    
-                                   
-                            })
-                            
-                            
-                          
-                        })
+                        }
                     }
-                    HStack {
+                Text("Tap the castle, unless you're chicken.")
+                    .foregroundColor(.black)
+                    .bold()
+                    .padding()
+                   
+                    
+                HStack {
+                    
+                    Button(action: {
+                        self.activeSheet = .first
+                    }, label: {
+                        Text("Part 1")
+                            .frame(width: 80, height: 45)
+                            .padding([.trailing, .leading])
+                            
+                            .background(.blue)
+                            .foregroundColor(.white)
+                            .bold()
+                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                            .cornerRadius(10)
+                           
+                           
+                            
+                           
+                        
                         Button(action: {
-                            self.activeSheet = .fourth
+                            self.activeSheet = .second
                         }, label: {
-                            Text("Part 4")
+                            Text("Part 2")
                                 .frame(width: 80, height: 45)
                                 .padding([.trailing, .leading])
                                 .background(.blue)
@@ -101,9 +106,9 @@ enum SheetTypes: Identifiable {
                                 .cornerRadius(10)
                             
                             Button(action: {
-                                self.activeSheet = .fifth
+                                self.activeSheet = .third
                             }, label: {
-                                Text("Part 5")
+                                Text("Part 3")
                                     .frame(width: 80, height: 45)
                                     .padding([.trailing, .leading])
                                     .background(.blue)
@@ -111,50 +116,88 @@ enum SheetTypes: Identifiable {
                                     .bold()
                                     .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
                                     .cornerRadius(10)
-                            })
-                            
-                            
-                            
-                            
-                            
-                        })
-                    }
-                           
-
                                 
-                        }
-                .sheet(item: self.$activeSheet, onDismiss: {print("Sheet closed")}) { item in
-                    switch item {
-                    case .first:
-                        SheetViewOne()
-                    case .second:
-                        SheetViewTwo()
-                    case .third:
-                        SheetViewThree()
-                    case .fourth:
-                        SheetViewFour()
-                    case .fifth:
-                        SheetViewFive()
+                            })
+                                
+                               
+                        })
                         
                         
+                      
+                    })
+                }
+                HStack {
+                    Button(action: {
+                        self.activeSheet = .fourth
+                    }, label: {
+                        Text("Part 4")
+                            .frame(width: 80, height: 45)
+                            .padding([.trailing, .leading])
+                            .background(.blue)
+                            .foregroundColor(.white)
+                            .bold()
+                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                            .cornerRadius(10)
+                        
+                        Button(action: {
+                            self.activeSheet = .fifth
+                        }, label: {
+                            Text("Part 5")
+                                .frame(width: 80, height: 45)
+                                .padding([.trailing, .leading])
+                                .background(.blue)
+                                .foregroundColor(.white)
+                                .bold()
+                                .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                .cornerRadius(10)
+                        })
+                        
+                        
+                        
+                        
+                        
+                    })
+                }
+                Spacer()
+                       
+
+                            
                     }
+            
+            .sheet(item: self.$activeSheet, onDismiss: {print("Sheet closed")}) { item in
+                switch item {
+                case .first:
+                    SheetViewOne()
+                case .second:
+                    SheetViewTwo()
+                case .third:
+                    SheetViewThree()
+                case .fourth:
+                    SheetViewFour()
+                case .fifth:
+                    SheetViewFive()
+               
+                
+                    
                     
                 }
-                        
-                         
                 
-                                
-                            }
-                        }
-           
+            }
+                    
+                     
             
-               
-                    
-                    
-                 
                             
-                        
+                        }
                     }
+       
+        
+           
+                
+                
+             
+                        
+                    
+                }
                 
                         
               

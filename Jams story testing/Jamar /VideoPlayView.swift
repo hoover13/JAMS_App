@@ -22,7 +22,7 @@ struct VideoPlayView: View {
             Button {
                 isPlaying ? player.pause() : player.play()
                 isPlaying.toggle()
-                player.seek(to: .zero)
+                player.seek(to: .zero) 
             } label: {
                 Image(systemName: isPlaying ? "stop" : "play")
                     .padding()

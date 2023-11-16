@@ -35,6 +35,7 @@ struct SheetViewOne: View {
                     
                     Text("Narrators note: 10 dollars was a lot of money back then. She was basically a millionaire.")
                         .padding(1)
+                        .bold()
                 }
               
                 
