@@ -18,8 +18,8 @@ struct Chapter2GameView: View {
         Question(questionText: "Who is the youngest person in the team?", answerOne: "Dashawn", answerTwo: "Joe", answerThree: "Jamar", answerFour: "Albert", correctAnswer: "Albert"),
         Question(questionText: "How many children does Jamar have?", answerOne: "1", answerTwo: "2", answerThree: "3", answerFour: "None", correctAnswer: "1"),
         Question(questionText: "Who is the most confident one?", answerOne: "Dashawn", answerTwo: "Joe", answerThree: "Jamar", answerFour: "Albert", correctAnswer: "Joe"),
-        Question(questionText: "Who works at downtown Cafe", answerOne: "Dashawn", answerTwo: "Joe", answerThree: "Jamar", answerFour: "Albert", correctAnswer: "Dashawn"),
-        Question(questionText: "Who is passionate about 3D objects", answerOne: "Dashawn", answerTwo: "Joe", answerThree: "Jamar", answerFour: "Albert", correctAnswer: "Joe")
+        Question(questionText: "Who works at downtown Cafe?", answerOne: "Dashawn", answerTwo: "Joe", answerThree: "Jamar", answerFour: "Albert", correctAnswer: "Dashawn"),
+        Question(questionText: "Who is the coolest one?", answerOne: "Min", answerTwo: "Min", answerThree: "Min", answerFour: "Min", correctAnswer: "Min")
     ]
     
     var currentQuestion: Question {

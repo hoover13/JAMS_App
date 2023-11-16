@@ -1,16 +1,14 @@
 //
-//  Chapter3View.swift
+//  Chapter4.1View.swift
 //  Jams story testing
 //
-//  Created by Min Thu Khine on 11/15/23.
+//  Created by Min Thu Khine on 11/16/23.
 //
 
 import SwiftUI
 
-struct Chapter3View: View { 
+struct Chapter4_1View: View {
     @EnvironmentObject var chapterUnlocker: ChapterUnlocker
-//    @Binding var navigateToNextChapter: Bool
-    @State private var storyForChapter3 = ["Chapter begins with Princess on her way to the restroom, the trio lagging not too far behind.", "While the Princess is in the restroom unloosing the caboose, the three covetous women attempt to take her glass slippers from the shoe cupboard and replace them with the cheap plastic knockoffs, but fail due to hearing the latrine flush sooner than expected.", "The trio spend their night looking for an opportunity to make the swap, but can’t find another time to do so.(Attempts: Offering to polish her slippers(Failure due to the princess refusing request), Disguising as the foot massager(Failure due to all eyes being on the shoes), During the shoeless contemporary dance(Failure due to shoes being locked within cage))", "The Princess enjoys the remainder of the night with her Prince. "]
     @State private var imageNames = ["road","cinderella","castle","PrincessRoom","road","shop"]
     @State private var currentIndex = 0
     @State private var showAlert = false
@@ -18,10 +16,10 @@ struct Chapter3View: View {
     var body: some View {
         ZStack {
             Color.cyan
-                .ignoresSafeArea()
+                .ignoresSafeArea() 
              
-            VStack() {
-                Text("Chapter 3")
+            VStack { 
+                Text("Chapter 4")
                     .font(.largeTitle)
                     .bold()
                 
@@ -29,6 +27,7 @@ struct Chapter3View: View {
                     ForEach(0..<imageNames.count) { index in
                         Image(imageNames[index])
                             .resizable()
+                            .scaledToFit()
                       
 //                        Text(storyForChapter3[index])
 //                            .font(.title)
@@ -49,15 +48,25 @@ struct Chapter3View: View {
                         title: Text("This is the end of Chapter 3"),
                         message: Text("Now you can go to Chapter 4"),
                         dismissButton: .default(Text("OK")) {
-                            chapterUnlocker.isChapter4Disabled = false
+                            chapterUnlocker.isChapter5Disabled = false
                         }
                     )
                 }
+                
+                ScrollView {
+                    
+                    Text("""
+    Although the story's title and main character's name change in different languages, in English-language folklore Cinderella is an archetypal name. The word Cinderella has, by analogy, come to mean someone whose attributes are unrecognized, or someone unexpectedly achieves recognition or success after a period of obscurity and neglect. In the world of sports, "a Cinderella" is used for an underrated team or club winning over stronger and more favored competitors. The still-popular story of Cinderella continues to influence popular culture internationally, lending plot elements, allusions, and tropes to a wide variety of media .
+     
+    """)
+                }
+
+                .padding()
             }
         }
     }
 }
 
 #Preview {
-    Chapter3View()
+    Chapter4_1View()
 }

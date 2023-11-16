@@ -16,10 +16,19 @@
 		16BEDD2B2B030B65009FC6AA /* Chapter2View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD2A2B030B65009FC6AA /* Chapter2View.swift */; };
 		16BEDD2D2B0317AA009FC6AA /* Chapter2GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD2C2B0317AA009FC6AA /* Chapter2GameView.swift */; };
 		16BEDD2F2B0319B0009FC6AA /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD2E2B0319B0009FC6AA /* Question.swift */; };
-		16BEDD312B03FB86009FC6AA /* GameTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD302B03FB86009FC6AA /* GameTestView.swift */; };
 		16BEDD6F2B054FD9009FC6AA /* Chapter3View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD6E2B054FD9009FC6AA /* Chapter3View.swift */; };
 		16BEDD752B05545E009FC6AA /* Chapter5View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD742B05545E009FC6AA /* Chapter5View.swift */; };
 		16BEDD772B055481009FC6AA /* Chapter4View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD762B055481009FC6AA /* Chapter4View.swift */; };
+		16BEDD792B065C53009FC6AA /* SheetViewOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD782B065C53009FC6AA /* SheetViewOne.swift */; };
+		16BEDD7B2B065C5B009FC6AA /* SheetViewTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD7A2B065C5B009FC6AA /* SheetViewTwo.swift */; };
+		16BEDD7D2B065C62009FC6AA /* SheetViewThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD7C2B065C62009FC6AA /* SheetViewThree.swift */; };
+		16BEDD7F2B065C69009FC6AA /* SheetViewFour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD7E2B065C69009FC6AA /* SheetViewFour.swift */; };
+		16BEDD812B065C70009FC6AA /* SheetViewFive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD802B065C70009FC6AA /* SheetViewFive.swift */; };
+		16BEDD842B066350009FC6AA /* VideoPlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD832B066350009FC6AA /* VideoPlayView.swift */; };
+		16BEDD862B0665E4009FC6AA /* cinderella.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 16BEDD852B0665E4009FC6AA /* cinderella.mp4 */; };
+		16BEDD882B069593009FC6AA /* Chapter4.1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD872B069593009FC6AA /* Chapter4.1View.swift */; };
+		16BEDD8A2B069BF2009FC6AA /* JoeChapterTextingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD892B069BF2009FC6AA /* JoeChapterTextingView.swift */; };
+		16BEDD8C2B06A7F5009FC6AA /* SheetAnimationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16BEDD8B2B06A7F5009FC6AA /* SheetAnimationView.swift */; };
 		16FDA7FB2B028231000450A6 /* Chapter1View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 16FDA7FA2B028231000450A6 /* Chapter1View.swift */; };
 /* End PBXBuildFile section */
 
@@ -34,10 +43,19 @@
 		16BEDD2A2B030B65009FC6AA /* Chapter2View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2View.swift; sourceTree = "<group>"; };
 		16BEDD2C2B0317AA009FC6AA /* Chapter2GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter2GameView.swift; sourceTree = "<group>"; };
 		16BEDD2E2B0319B0009FC6AA /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
-		16BEDD302B03FB86009FC6AA /* GameTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTestView.swift; sourceTree = "<group>"; };
 		16BEDD6E2B054FD9009FC6AA /* Chapter3View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter3View.swift; sourceTree = "<group>"; };
 		16BEDD742B05545E009FC6AA /* Chapter5View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter5View.swift; sourceTree = "<group>"; };
 		16BEDD762B055481009FC6AA /* Chapter4View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4View.swift; sourceTree = "<group>"; };
+		16BEDD782B065C53009FC6AA /* SheetViewOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewOne.swift; sourceTree = "<group>"; };
+		16BEDD7A2B065C5B009FC6AA /* SheetViewTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewTwo.swift; sourceTree = "<group>"; };
+		16BEDD7C2B065C62009FC6AA /* SheetViewThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewThree.swift; sourceTree = "<group>"; };
+		16BEDD7E2B065C69009FC6AA /* SheetViewFour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewFour.swift; sourceTree = "<group>"; };
+		16BEDD802B065C70009FC6AA /* SheetViewFive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetViewFive.swift; sourceTree = "<group>"; };
+		16BEDD832B066350009FC6AA /* VideoPlayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoPlayView.swift; sourceTree = "<group>"; };
+		16BEDD852B0665E4009FC6AA /* cinderella.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = cinderella.mp4; sourceTree = "<group>"; };
+		16BEDD872B069593009FC6AA /* Chapter4.1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter4.1View.swift; sourceTree = "<group>"; };
+		16BEDD892B069BF2009FC6AA /* JoeChapterTextingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoeChapterTextingView.swift; sourceTree = "<group>"; };
+		16BEDD8B2B06A7F5009FC6AA /* SheetAnimationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheetAnimationView.swift; sourceTree = "<group>"; };
 		16FDA7FA2B028231000450A6 /* Chapter1View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chapter1View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -71,7 +89,6 @@
 		16550F5F2B005B7100B8FAC0 /* Jams story testing */ = {
 			isa = PBXGroup;
 			children = (
-				16550F642B005B7200B8FAC0 /* Assets.xcassets */,
 				16550F602B005B7100B8FAC0 /* Jams_story_testingApp.swift */,
 				16BEDD272B030A26009FC6AA /* SplashScreenView.swift */,
 				16550F702B006A9800B8FAC0 /* MainView.swift */,
@@ -90,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				16550F672B005B7200B8FAC0 /* Preview Assets.xcassets */,
+				16550F642B005B7200B8FAC0 /* Assets.xcassets */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -99,7 +117,6 @@
 			children = (
 				16BEDD2A2B030B65009FC6AA /* Chapter2View.swift */,
 				16BEDD2C2B0317AA009FC6AA /* Chapter2GameView.swift */,
-				16BEDD302B03FB86009FC6AA /* GameTestView.swift */,
 				16BEDD2E2B0319B0009FC6AA /* Question.swift */,
 			);
 			path = "Min ";
@@ -109,6 +126,9 @@
 			isa = PBXGroup;
 			children = (
 				16BEDD762B055481009FC6AA /* Chapter4View.swift */,
+				16BEDD872B069593009FC6AA /* Chapter4.1View.swift */,
+				16BEDD832B066350009FC6AA /* VideoPlayView.swift */,
+				16BEDD852B0665E4009FC6AA /* cinderella.mp4 */,
 			);
 			path = "Jamar ";
 			sourceTree = "<group>";
@@ -117,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				16BEDD6E2B054FD9009FC6AA /* Chapter3View.swift */,
+				16BEDD892B069BF2009FC6AA /* JoeChapterTextingView.swift */,
 			);
 			path = Joe;
 			sourceTree = "<group>";
@@ -125,6 +146,12 @@
 			isa = PBXGroup;
 			children = (
 				16BEDD742B05545E009FC6AA /* Chapter5View.swift */,
+				16BEDD782B065C53009FC6AA /* SheetViewOne.swift */,
+				16BEDD8B2B06A7F5009FC6AA /* SheetAnimationView.swift */,
+				16BEDD7A2B065C5B009FC6AA /* SheetViewTwo.swift */,
+				16BEDD7C2B065C62009FC6AA /* SheetViewThree.swift */,
+				16BEDD7E2B065C69009FC6AA /* SheetViewFour.swift */,
+				16BEDD802B065C70009FC6AA /* SheetViewFive.swift */,
 			);
 			path = Albert;
 			sourceTree = "<group>";
@@ -203,6 +230,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16BEDD862B0665E4009FC6AA /* cinderella.mp4 in Resources */,
 				16550F682B005B7200B8FAC0 /* Preview Assets.xcassets in Resources */,
 				16550F652B005B7200B8FAC0 /* Assets.xcassets in Resources */,
 			);
@@ -215,18 +243,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16BEDD312B03FB86009FC6AA /* GameTestView.swift in Sources */,
+				16BEDD812B065C70009FC6AA /* SheetViewFive.swift in Sources */,
 				16BEDD2B2B030B65009FC6AA /* Chapter2View.swift in Sources */,
 				16550F712B006A9800B8FAC0 /* MainView.swift in Sources */,
 				16BEDD2F2B0319B0009FC6AA /* Question.swift in Sources */,
+				16BEDD792B065C53009FC6AA /* SheetViewOne.swift in Sources */,
 				16BEDD752B05545E009FC6AA /* Chapter5View.swift in Sources */,
 				16550F612B005B7100B8FAC0 /* Jams_story_testingApp.swift in Sources */,
 				16FDA7FB2B028231000450A6 /* Chapter1View.swift in Sources */,
 				16BEDD772B055481009FC6AA /* Chapter4View.swift in Sources */,
 				16550F6F2B005ECA00B8FAC0 /* ChapterUnlocker.swift in Sources */,
 				16BEDD282B030A26009FC6AA /* SplashScreenView.swift in Sources */,
+				16BEDD8A2B069BF2009FC6AA /* JoeChapterTextingView.swift in Sources */,
+				16BEDD7D2B065C62009FC6AA /* SheetViewThree.swift in Sources */,
+				16BEDD882B069593009FC6AA /* Chapter4.1View.swift in Sources */,
+				16BEDD7B2B065C5B009FC6AA /* SheetViewTwo.swift in Sources */,
 				16BEDD6F2B054FD9009FC6AA /* Chapter3View.swift in Sources */,
+				16BEDD842B066350009FC6AA /* VideoPlayView.swift in Sources */,
+				16BEDD7F2B065C69009FC6AA /* SheetViewFour.swift in Sources */,
 				16BEDD2D2B0317AA009FC6AA /* Chapter2GameView.swift in Sources */,
+				16BEDD8C2B06A7F5009FC6AA /* SheetAnimationView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

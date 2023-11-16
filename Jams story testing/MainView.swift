@@ -7,7 +7,6 @@
 
 import SwiftUI
 
-
 struct MainView: View {
     @EnvironmentObject var chapterUnlocker: ChapterUnlocker
     @State private var navigateToNextChapter = false
@@ -56,7 +55,7 @@ struct MainView: View {
 //                        Text("Chapter 4")
                         ChapterButtonView(number: 4)
                             .opacity(chapterUnlocker.isChapter4Disabled ? 0.2 : 1.0)
-                    })
+                    }) 
                     .disabled(chapterUnlocker.isChapter4Disabled)
                     
                     NavigationLink(destination: {
@@ -66,7 +65,7 @@ struct MainView: View {
                         ChapterButtonView(number: 5)
                             .opacity(chapterUnlocker.isChapter5Disabled ? 0.2 : 1.0)
                     })
-                    .disabled(true)
+                    .disabled(chapterUnlocker.isChapter5Disabled)
                 }
             }
         }
